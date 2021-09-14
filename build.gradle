@@ -2,7 +2,6 @@ plugins {
     id 'org.springframework.boot' version '2.5.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id 'war'
 }
 
 group = 'com.isac'
@@ -31,7 +30,7 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.4'
     runtimeOnly 'org.postgresql:postgresql:42.2.23.jre7'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
-    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
     testImplementation 'org.springframework.security:spring-security-test:5.5.1'
 }
