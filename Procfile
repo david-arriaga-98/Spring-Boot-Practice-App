@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -war build/libs/ecommerce-0.0.1-SNAPSHOT.war
