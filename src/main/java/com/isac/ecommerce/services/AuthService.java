@@ -30,7 +30,7 @@ public class AuthService {
     private final JwtService jwtService;
     private final MailService mailService;
 
-    private final String EMAIL_VERIFICATION_ID = "d-1a11a613119b4ad39853c819dcc65de0";
+    private final String EMAIL_VERIFICATION_ID = "d-93b2ed892ff944e998b9571f3f6a9277";
 
     public AuthService(AuthenticationManager authenticationManager, UserRepository userRepository, JwtService jwtService, MailService mailService) {
         this.authenticationManager = authenticationManager;

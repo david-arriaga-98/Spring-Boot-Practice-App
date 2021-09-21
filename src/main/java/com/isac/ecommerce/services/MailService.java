@@ -18,7 +18,7 @@ import java.util.Map;
 @Service
 public class MailService {
 
-    private static final String SENDGRID_API_KEY = "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";
+    private static final String SENDGRID_API_KEY = "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";
 
     public int sendDynamicEmail(String subject,
                                 Email to,
@@ -42,6 +42,8 @@ public class MailService {
         request.setEndpoint("mail/send");
         request.setBody(mail.build());
         Response response = sendGrid.api(request);
+        Map<String, String> headers = response.getHeaders();
+        String body = response.getBody();
         return response.getStatusCode();
     }
 

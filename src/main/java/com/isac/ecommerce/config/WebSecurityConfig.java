@@ -54,7 +54,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://commerce.david-arriaga.xyz/");
+                        .allowedOrigins(
+                                "https://commerce.david-arriaga.xyz/",
+                                "http://localhost:3000"
+                        );
             }
         };
     }
